@@ -43,7 +43,6 @@ def create_index(idx_name):
             "number_of_shards":   tornado.options.options.num_of_shards,
             "number_of_replicas": tornado.options.options.num_of_replicas
         },
-        "refresh": True
     }
 
     body = json.dumps(schema)
